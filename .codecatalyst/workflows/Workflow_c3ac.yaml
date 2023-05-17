@@ -20,6 +20,7 @@ Actions:
         ReportNamePrefix: rpt
     Configuration:
       Steps:
+        - Run: wget https://dot.net/v1/dotnet-install.sh -O dotnet-install.sh
         - Run: dotnet build
     Compute:
       Type: EC2
