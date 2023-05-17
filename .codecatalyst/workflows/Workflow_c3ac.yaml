@@ -21,6 +21,7 @@ Actions:
     Configuration:
       Steps:
         - Run: wget https://dot.net/v1/dotnet-install.sh -O dotnet-install.sh --version latest
+        - Run: ./dotnet-install.sh --channel 7.0
         - Run: dotnet --info
         - Run: dotnet build
     Compute:
