@@ -20,8 +20,7 @@ Actions:
         ReportNamePrefix: rpt
     Configuration:
       Steps:
-        - Run: wget https://dot.net/v1/dotnet-install.sh -O dotnet-install.sh --version latest
-        - Run: ./dotnet-install.sh --channel 7.0
+        - Run: curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin --channel 7.0
         - Run: dotnet --info
         - Run: dotnet build
     Compute:
