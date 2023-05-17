@@ -23,6 +23,6 @@ Actions:
         - Run: curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin --channel 7.0
         - Run: dotnet --info
         - Run: dotnet build src/NopCommerce.sln -c Release
-        - Run: dotnet test src/NopCommerce.sln -c Release --no-build --logger "trx"
+        - Run: dotnet test src/NopCommerce.sln -c Release --logger "trx"
     Compute:
       Type: EC2
