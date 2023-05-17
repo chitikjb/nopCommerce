@@ -20,7 +20,7 @@ Actions:
         ReportNamePrefix: rpt
     Configuration:
       Steps:
-        - Run: wget https://dot.net/v1/dotnet-install.sh -O dotnet-install.sh
+        - Run: wget https://dot.net/v1/dotnet-install.sh -O dotnet-install.sh --version latest
         - Run: dotnet --info
         - Run: dotnet build
     Compute:
